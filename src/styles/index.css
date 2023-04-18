@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .2s;
+}
+
+body {
+    background-color: #212121;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 150px;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+.menu ul li {
+    list-style: none;
+    border-bottom: 3px solid #212121;
+    padding: 15px;
+    width: 100%;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: #616161;
+}
+
+.menu ul a:hover {
+    color: #B4B4B4;
+}
+
+
+.logo {
+    background-color: #161616;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 110px;
+    animation-name: slideinDelay;
+    animation-duration: 2s;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.social a {
+    color: #404040;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.social a:hover {
+    color: #B4B4B4;
+}
+
+.content {
+    min-height: 100vh;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    animation-name: upin;
+    animation-duration: 1s;
+    background-image: linear-gradient(to top, #212121, #161616);
+}
+
+.language {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    color: #404040;
+}
+
+.language select {
+    color: #404040;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    margin-left: 5px;
+}
+
+.language select:hover {
+    color: #8F8F8F;
+}
+
+.home {
+    margin-left: 70px;
+}
+
+.title {
+    color: #f8f8f8;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 70px;
+    line-height: auto;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.title span {
+    color: #186CCE;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 70px;
+    line-height: 115px;
+    letter-spacing: 0.05em;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    color: #525252;
+}
+
+.btnStart {
+    background: none;
+    font-size: 22px;
+    color: #FFFFFF;
+    border: 3px solid #186CCE;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 50px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.btnStart:hover {
+    background-color: #186CCE;
+}
+
+.scrollDown {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.scrollDown i {
+    color: #616161;
+    font-size: 36px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideinDelay {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes upin {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
