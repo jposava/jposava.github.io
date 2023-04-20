@@ -6,8 +6,26 @@
     transition: all .2s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #212121;
+    color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #186dcea8;
+    border-radius: 80%;
 }
 
 .container {
@@ -77,6 +95,12 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.home {
     min-height: 100vh;
     margin-left: 150px;
     display: flex;
@@ -111,7 +135,7 @@ body {
     color: #8F8F8F;
 }
 
-.home {
+.home-content {
     margin-left: 70px;
 }
 
@@ -176,6 +200,56 @@ body {
     animation-duration: 1s;
     animation-delay: 3s;
     animation-iteration-count: 3;
+}
+
+.section-1 {
+    background-image: linear-gradient(to top, #161616, #212121);
+}
+
+.section-2 {
+    background-image: linear-gradient(to top, #212121, #161616);
+}
+
+.container-section {
+    min-height: 100vh;
+    margin-left: 150px;
+    padding: 20px 70px 20px 70px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container-section p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #dfdfdf;
+    text-align: justify;
+    margin: 10px;
+}
+
+.container-section img {
+    max-width: 290px;
+    width: 50%;
+    align-self: flex-end;
+    filter: grayscale(1) blur(5px);
+    -webkit-filter: grayscale(1) blur(5px);
+    transition: all .1s ease-in-out;
+}
+
+.container-section img:hover {
+    filter: grayscale(0) blur(0);
+    -webkit-filter: grayscale(0) blur(0);
+    border-radius: 20px;
+}
+
+.title-section {
+    color: #383838;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 96px;
+    letter-spacing: .09em;
+    border-top: 2px dashed #383838;
+    margin-bottom: 20px;
 }
 
 @keyframes slidein {

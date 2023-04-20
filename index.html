@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Osava / Analista de QA</title>
+    <title>João Osava - Analista de QA</title>
+    <link rel="icon" href="./src/assets/logo.png">
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,52 +15,88 @@
 </head>
 
 <body>
-    <main class="container">
+    <div class="container">
         <nav class="menu">
-            <div>
+            <article>
                 <div class="logo">
-                    <img src="./src/assets/logo.png" alt="Logo">
+                    <a href="#home"><img src="./src/assets/logo.png" alt="Logo"></a>
                 </div>
                 <ul>
                     <li></li>
-                    <a href="#">
+                    <a href="#sobre">
                         <li>Sobre</li>
                     </a>
-                    <a href="#">
+                    <a href="#experiencia">
                         <li>Experiência</li>
                     </a>
-                    <a href="#">
+                    <a href="#competencias">
                         <li>Competências</li>
                     </a>
                     <a href="#">
                         <li>Currículo</li>
                     </a>
                 </ul>
-            </div>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/jposava/" target="_blank" class="linkSocial" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/jposava/" target="_blank" class="linkSocial" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/jposava" target="_blank" class="linkSocial" title="GitHub"><i class="fa-brands fa-square-github"></i></a>
-            </div>
+            </article>
+            <article class="social">
+                <a href="https://www.linkedin.com/in/jposava/" target="_blank" class="linkSocial" title="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jposava/" target="_blank" class="linkSocial" title="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/jposava" target="_blank" class="linkSocial" title="GitHub"><i
+                        class="fa-brands fa-square-github"></i></a>
+            </article>
         </nav>
-        <div class="content">
-            <div class="language">
-                <i class="fa-solid fa-language" style="font-size: 20px;"></i>
-                <select name="language" id="language">
-                    <option value="pt-br">Português</option>
-                    <option value="en-us">English</option>
-                </select>
-            </div>
-            <div class="home">
-                <h1 class="title">Olá,<br>Eu sou o <span>J</span>oão,<br>Analista de Quality Assurance Automation</h1>
-                <h3 class="subtitle">Testes Automatizados</h3>
-                <button class="btnStart">Contato</button>
-            </div>
-            <div class="scrollDown">
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-    </main>
+        <main class="content">
+            <section class="home" id="home">
+                <article class="language">
+                    <i class="fa-solid fa-language" style="font-size: 20px;"></i>
+                    <select name="language" id="language">
+                        <option value="pt-br">Português</option>
+                        <option value="en-us">English</option>
+                    </select>
+                </article>
+                <article class="home-content">
+                    <h1 class="title">Olá,<br>Eu sou o <span>J</span>oão,<br>Analista de Quality Assurance Automation
+                    </h1>
+                    <h3 class="subtitle">Testes Automatizados</h3>
+                    <button class="btnStart">Contato</button>
+                </article>
+                <div class="scrollDown">
+                    <a href="#sobre"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </section>
+            <section class="container-section section-1" id="sobre">
+                <h1 class="title-section">SOBRE</h1>
+                <p>
+                    Me chamo João Pedro Osava, tenho 26 anos, sou formado em Ciência da Computação, moro no estado do RJ
+                    e sou Analista de Quality Assurance
+                    Automation. Tenho como hobby a programação, em especial o desenvolvimento web e recentemente mobile.
+                    Criei
+                    este site com o intuito de praticar mais minhas habilidades frontend e deixar como cartão de visita
+                    pra minha vida profissional e meus hobbys como dev.<br>
+                </p>
+                <div style="display: flex; gap: 50px;">
+                    <p>
+                        A minha tragetória na carreira de tecnologia teve inicio no ano de 2019, onde eu ingressei em um
+                        estágio de testes manuais. Logo fui contratado, onde continuei com as mesmas atividades que eu
+                        vinha fazendo no
+                        estágio. Um tempo depois, insatisfeito com o trabalho que vinha fazendo, mudei para a área de
+                        DevOps. Isso durou alguns meses até eu ir finalmente para automação de testes, onde estou
+                        atuando até o momento.<br><br>
+                        No menu lateral estão minhas redes sociais
+                        principais, caso queira entrar em contato, me adiciona lá! 😉<br><br>
+                        PS: Por mais que eu tenha conhecimento em frameworks frontend como React.js, criei esse site com
+                        HTML, CSS e JS puro para treinar minha base. Ah, e hospedei no GitHub Page!
+                    </p>
+                    <img src="./src/assets/WhatsApp Image 2023-04-18 at 14.41.29.jpeg" alt="Foto de Perfil">
+                </div>
+            </section>
+            <section class="container-section section-2" id="experiencia">
+                <h1 class="title-section">EXPERIÊNCIA</h1>
+
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
