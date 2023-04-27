@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Osava - Analista de QA</title>
+    <title>João Osava - Analista QA Automation</title>
     <link rel="icon" href="./src/assets/logo.png">
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,44 @@
 
 <body>
     <div class="container">
+        <nav id="menu-mobile">
+            <button id="btnMenuMobile">
+                <span id="hamb-1"></span>
+                <span id="hamb-2"></span>
+                <span id="hamb-3"></span>
+            </button>
+            <div id="content-menu-mobile">
+                <article>
+                    <div class="logo">
+                        <a href="#home" id="menu-logo"><img src="./src/assets/logo.png" alt="Logo"></a>
+                    </div>
+                    <ul>
+                        <li></li>
+                        <a href="#sobre" id="menu-sobre">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="#experiencia" id="menu-experiencia">
+                            <li>Experiência</li>
+                        </a>
+                        <a href="#competencias" id="menu-competencias">
+                            <li>Competências</li>
+                        </a>
+                        <a href="#">
+                            <li>Currículo</li>
+                        </a>
+                    </ul>
+                </article>
+                <article class="social">
+                    <a href="https://www.linkedin.com/in/jposava/" target="_blank" class="linkSocial"
+                        title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jposava/" target="_blank" class="linkSocial" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jposava" target="_blank" class="linkSocial" title="GitHub"><i
+                            class="fa-brands fa-square-github"></i></a>
+                </article>
+            </div>
+        </nav>
+
         <nav class="menu">
             <article>
                 <div class="logo">
@@ -56,9 +94,9 @@
                     </select>
                 </article>
                 <article class="home-content">
-                    <h1 class="title">Olá,<br>Eu sou o <span>J</span>oão,<br>Analista de Quality Assurance Automation
+                    <h1 class="title">Olá,<br>Eu sou o <span>J</span>oão,<br>Analista QA Automation
                     </h1>
-                    <h3 class="subtitle">Testes Automatizados</h3>
+                    <h3 class="subtitle">Testes Automatizados em Sistemas</h3>
                     <button class="btnStart">Currículo</button>
                 </article>
                 <div class="scrollDown">
@@ -68,12 +106,12 @@
             <section class="container-section section-1" id="sobre">
                 <h1 class="title-section">SOBRE</h1>
                 <p>
-                    Me chamo João Pedro Osava, tenho 26 anos, sou formado em Ciência da Computação, moro no estado do RJ
+                    Me chamo João Pedro Osava, moro no estado do RJ, sou formado em Ciência da Computação
                     e sou Analista de Quality Assurance
-                    Automation. Tenho como hobby a programação, em especial o desenvolvimento web e recentemente mobile.
+                    Automation. Tenho como hobby a programação, em especial o desenvolvimento web.
                     Criei
-                    este site com o intuito de praticar mais minhas habilidades frontend e deixar como cartão de visita
-                    pra minha vida profissional e meus hobbys como dev.<br>
+                    este site com o intuito de praticar mais minhas habilidades frontend e deixar como portifólio
+                    para minha vida profissional e meus hobbys como dev.<br>
                 </p>
                 <div style="display: flex; gap: 50px;">
                     <p>
@@ -83,7 +121,7 @@
                         estágio. Um tempo depois, mudei para a área de
                         DevOps. Isso durou alguns meses até eu ir finalmente para automação de testes, onde estou
                         atuando até o momento.<br><br>
-                        No menu lateral estão minhas redes sociais
+                        No menu estão minhas redes sociais
                         principais, caso queira entrar em contato, me adiciona lá! 😉<br><br>
                         PS: Criei esse site com HTML, CSS e JS puro para treinar minha base web. Ah, e hospedei na
                         Vercel!
@@ -101,7 +139,7 @@
                         <h1>PrimeUp</h1>
                         <div>
                             <div class="job">
-                                <h3>Analista de Quality Assurance Automation</h3>
+                                <h3>Analista QA Automation</h3>
                                 <div>
                                     <h4>Hoje</h4>
                                     <progress value="100" max="100"></progress>
@@ -109,7 +147,7 @@
                                 </div>
                             </div>
                             <div class="job">
-                                <h3>DevOps</h3>
+                                <h3>Analista DevOps</h3>
                                 <div>
                                     <i class="fa-solid fa-arrow-left-long"></i>
                                     <progress value="100" max="100"></progress>
@@ -117,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="job">
-                                <h3>Analista de Testes Manuais</h3>
+                                <h3>Analista QA Manual</h3>
                                 <div>
                                     <i class="fa-solid fa-arrow-left-long"></i>
                                     <progress value="100" max="100"></progress>
@@ -244,6 +282,8 @@
             </section>
         </main>
     </div>
+
+    <script src="./src/scripts/toggleMenuMobile.js"></script>
 </body>
 
 </html>
